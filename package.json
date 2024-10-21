@@ -4,6 +4,8 @@
   "description": "Eventomania provides a centralized platform for planning, organizing, and executing college events. Powered by the MERN Stack.\r The system provides a highly intuitive and user-friendly interface, coupled with a robust set of tools that greatly enhance the execution of events.\r It streamlines the entire event management process, from event registration to post-event analysis.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "build": "echo 'Build script goes here'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
