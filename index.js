@@ -9,6 +9,7 @@ localStorage = new LocalStorage('./scratch')
 const { json } = require('body-parser')
 const eventRegistration = require('./models/Registration')
 
+const PORT = process.env.PORT ||  8000;
 
 const app = express();
 app.use(bodyParser.json());
@@ -319,15 +320,7 @@ app.post("/register", function (req, res) {
 
 
 
-
-
-
-
-
-
-
-
 //server starting
-app.listen(8000, () => {
-  console.log("Server is running");
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
 });
